@@ -45,20 +45,12 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-8">
+          <div class="col-lg-4">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                  <img src="assets/img/portfolio/openmdao_main_logo.png"" alt="">
                 </div>
 
               </div>
@@ -66,20 +58,37 @@
             </div>
           </div>
 
-          <div class="col-lg-4">
+          <div class="col-lg-8">
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Category</strong>: Graduate Research</li>
+                <li><strong>Organization</strong>: MDOLab, University of Michgian</li>
+                <li><strong>Project date</strong>: Jan 2022 - June 2022</li>
+                <li><strong>Project Paper</strong>: <a href="assets/papers/mdolab_final_report.pdf">PDF</a></li>
+                <li><strong>Lab Website</strong>: <a href="https://mdolab.engin.umich.edu" target="_blank">MDOLab</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
+              <h2>OpenMDAO Conventional Aircraft Sizing Exploration using OpenConcept</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                This is was an independent study reserach project exploring the field of multidisciplinary design optimization for conventional aerosapce applications. It uses source code developed by the MDOLab at the University of Michigan, and implement aircraft design equations from textbooks to explore aircraft design sizing and wing shape optimization. Specifically, it leverages 
+                and the OpenMDAO package <a href="https://github.com/mdolab/openconcept" target="_blank">OpenConcept</a> as a aircraft mission analysis code, and <a href="https://github.com/mdolab/openaerostruct" target="_blank">OpenAeroStruct</a> to perform perforamnce based optimization. Some of the notable accomplishments of this project are:
+                <li>
+                  Created multidisciplinary design optimization framework components in OpenMDAO to size conventional aircraft configurations, successfully showed POC can size small narrowbody and turboprop aircraft; components included weights, empennage, aerodynamic, and propulsion scaling models used in aircraft buildup and analysis
+                </li>
+                <li>
+                  Integrated existing mission analysis software as performance engine; allowing for aircraft design sizing across design space using block fuel, total fuel, and mission time as optimization objective functions
+                </li>
+                <li>
+                  Wrote cost modelling tools using published aircraft design works to develop cost-based objective function; coupled with mission analysis code to verify optimized design trends match industry expectations
+                </li>
+                <li>
+                  Added wing shape parameters as optimization design variables using OpenMDAO wing modelling tool unlocking aircraft sizing capability with tandem wing shape optimization
+                </li>
+                <li>
+                  Documented analytical methods and references as final paper and presented to professors and lab teams
+                </li>
               </p>
             </div>
           </div>
